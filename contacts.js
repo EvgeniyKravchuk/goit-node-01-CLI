@@ -5,7 +5,7 @@ const { nanoid } = require("nanoid");
 const contactsPath = path.resolve("db/contacts.json");
 
 async function findContactInArrById(arr, id) {
-  return await arr.find((el) => el.id.toString() === id.toString());
+  return await arr.find((item) => item.id.toString() === id.toString());
 }
 
 async function listContacts() {
